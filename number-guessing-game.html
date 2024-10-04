@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="body_wr">
+			<div class="game_container">
+				<div class="result_bx">1~100까지의 숫자를 입력하세요!</div>
+				<form id="form">
+					<input type="number" id="number" />
+					<button type="submit" id="btn">Go</button>
+				</form>
+				<p>try : <span id="playNum">0</span></p>
+				<button id="reset">RESET</button>
+			</div>
+		</div>
+
+		<div class="modal_wr">
+			<div class="modal">
+				<div class="setting_container">
+					<h2>SETTING</h2>
+					<div>
+						<h3>Range</h3>
+						<input type="text" /> <span>~</span>
+						<input type="text" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/number-guessing-game.js"></script>
+	</body>
+</html>
