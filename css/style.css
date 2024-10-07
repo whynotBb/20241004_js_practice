@@ -161,6 +161,7 @@ input[type=number] {
   background: #272837;
   height: 3.6rem;
   color: #ffffff;
+  padding: 0 1.2rem;
 }
 
 button {
@@ -210,4 +211,53 @@ h3 {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 2.4rem;
+  position: relative;
+}
+.modal_wr .modal .btn_close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+.modal_wr .modal .btn_close::before, .modal_wr .modal .btn_close::after {
+  content: "";
+  width: 0.2rem;
+  height: 2rem;
+  background: #f2f2f2;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: rotate(45deg);
+}
+.modal_wr .modal .btn_close::after {
+  transform: rotate(-45deg);
+}
+
+.game_container {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.heart_bx {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.hint_bx {
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+.hint_bx .item {
+  flex: 1;
+  min-height: 20rem;
+}
+.hint_bx .item:first-child {
+  border-right: 1px dashed #393a4c;
 }

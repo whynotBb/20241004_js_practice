@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="./css/style.css" />
-	</head>
-	<body>
-		<div class="body_wr">
-			<div class="game_container">
-				<div class="result_bx">1~100까지의 숫자를 입력하세요!</div>
-				<form id="form">
-					<input type="number" id="number" />
-					<button type="submit" id="btn">Go</button>
-				</form>
-				<p>try : <span id="playNum">0</span></p>
-				<button id="reset">RESET</button>
-			</div>
-		</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="body_wr">
+      <div class="game_container">
+        <ul class="heart_bx">
+          <!-- <li>💜</li>
+          <li>💜</li>
+          <li>💜</li>
+          <li>💜</li>
+          <li>💜</li> -->
+        </ul>
+        <div class="info_bx">1~100까지의 숫자를 입력하세요!(<span id="randomNum"></span>)</div>
+        <form id="form">
+          <input type="number" id="number" />
+          <button type="submit" id="btn">Go</button>
+        </form>
+        <div class="result_bx" id="resultTxt"></div>
+        <button id="reset">RESET</button>
+        <div class="hint_bx">
+          <div class="item up_bx">
+            <h3>Up 👍</h3>
+            <div></div>
+          </div>
+          <div class="item down_bx">
+            <h3>Down 👎</h3>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<div class="modal_wr">
-			<div class="modal">
-				<div class="setting_container">
-					<h2>Setting</h2>
-					<div>
-						<h3>Range</h3>
-						<input type="text" /> <span>~</span>
-						<input type="text" />
-					</div>
-					<div>
-						<h3>Number of Try</h3>
-						<input type="text" />
-					</div>
-					<button class="primary">START</button>
-				</div>
-			</div>
-		</div>
-		<script src="./js/number-guessing-game.js"></script>
-	</body>
+    <div class="modal_wr" id="modal01" style="display: none">
+      <div class="modal">
+        <div class="btn_close" onclick="fadeOut('modal01')"></div>
+        <div class="setting_container">
+          <h2>Setting</h2>
+          <div>
+            <h3>Range</h3>
+            <input type="text" /> <span>~</span>
+            <input type="text" />
+          </div>
+          <div>
+            <h3>Number of Try</h3>
+            <input type="text" />
+          </div>
+          <button class="primary">START</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/number-guessing-game.js"></script>
+  </body>
 </html>

@@ -79,12 +79,12 @@ time,
 mark,
 audio,
 video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -98,103 +98,157 @@ hgroup,
 menu,
 nav,
 section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol,
 ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote,
 q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: "";
-	content: none;
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
 
 html {
-	font-size: 10px;
+  font-size: 10px;
 }
 body {
-	font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-	font-size: 1.6rem;
-	font-weight: 400;
-	max-width: 76.8rem;
-	margin: 0 auto;
-	background: #161625;
-	color: #ffffff;
-	.body_wr {
-		background: #161625;
-		min-height: 100vh;
-	}
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",
+    "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  max-width: 76.8rem;
+  margin: 0 auto;
+  background: #161625;
+  color: #ffffff;
+  .body_wr {
+    background: #161625;
+    min-height: 100vh;
+  }
 }
 input[type="text"],
 input[type="number"] {
-	font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-	border: 1px solid #2e2f3f;
-	outline: none;
-	border-radius: 0.4rem;
-	background: #272837;
-	height: 3.6rem;
-	color: #ffffff;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",
+    "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  border: 1px solid #2e2f3f;
+  outline: none;
+  border-radius: 0.4rem;
+  background: #272837;
+  height: 3.6rem;
+  color: #ffffff;
+  padding: 0 1.2rem;
 }
 button {
-	font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-	border: none;
-	outline: none;
-	background: #393a4c;
-	color: #ffffff;
-	cursor: pointer;
-	height: 3.6rem;
-	line-height: 3.6rem;
-	border-radius: 0.4rem;
-	padding: 0 1.6rem;
-	&.primary {
-		background: #8f51de;
-	}
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",
+    "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  border: none;
+  outline: none;
+  background: #393a4c;
+  color: #ffffff;
+  cursor: pointer;
+  height: 3.6rem;
+  line-height: 3.6rem;
+  border-radius: 0.4rem;
+  padding: 0 1.6rem;
+  &.primary {
+    background: #8f51de;
+  }
 }
 h2 {
-	font-size: 2.4rem;
-	line-height: 2.8rem;
-	margin-bottom: 1.6rem;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  margin-bottom: 1.6rem;
 }
 h3 {
-	font-size: 2rem;
-	line-height: 2.4rem;
-	margin-bottom: 0.8rem;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  margin-bottom: 0.8rem;
 }
 .modal_wr {
-	width: 100vw;
-	height: 100vh;
-	background: rgba(0, 0, 0, 0.7);
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 10;
-	.modal {
-		width: 90vw;
-		max-width: 60rem;
-		min-height: 10rem;
-		background: #1e1f2d;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		padding: 2.4rem;
-	}
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  .modal {
+    width: 90vw;
+    max-width: 60rem;
+    min-height: 10rem;
+    background: #1e1f2d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2.4rem;
+    position: relative;
+    .btn_close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 3rem;
+      height: 3rem;
+      cursor: pointer;
+      &::before,
+      &::after {
+        content: "";
+        width: 0.2rem;
+        height: 2rem;
+        background: #f2f2f2;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transform: rotate(45deg);
+      }
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+.game_container {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.heart_bx {
+  display: flex;
+  gap: 0.2rem;
+}
+.hint_bx {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  .item {
+    flex: 1;
+    min-height: 20rem;
+    &:first-child {
+      border-right: 1px dashed #393a4c;
+    }
+  }
 }
